@@ -14,7 +14,9 @@ private let reuseIdentifier = "Cell"
 
 class ClanViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     var currentIndex: Int = 0
- 
+    var idcomunity: Int?
+    let userDefaults = UserDefaults.standard
+    
     @IBOutlet weak var RankCollectionView: UICollectionView!
 
     var clans: [Clan] = [] {
@@ -41,7 +43,7 @@ class ClanViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func testNetworking() {
-        var xd = ClanBattlesService.gamesUrl + "/" + String(1) + "/clans"
+        var xd = ClanBattlesService.gamesUrl + "/" + userDefaults.string(forKey: "id")! +  "/clans"
         Alamofire.request(xd)
             .responseJSON(completionHandler: {
                 response in
@@ -84,7 +86,7 @@ class ClanViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     
     func updateClans() {
-        var xd = ClanBattlesService.gamesUrl + "/" + String(1) + "/clans"
+        var xd = ClanBattlesService.gamesUrl + "/" + userDefaults.string(forKey: "id")! + "/clans"
         Alamofire.request(xd)
             .responseJSON(completionHandler: {
                 response in

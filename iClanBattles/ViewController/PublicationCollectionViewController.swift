@@ -15,8 +15,11 @@ private let reuseIdentifier = "Cell"
 
 class PublicationCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
  var currentIndex: Int = 0
- 
     
+    let userDefaults = UserDefaults.standard
+    
+    var idcomunity: Int?
+
     @IBOutlet weak var publicationColletionView: UICollectionView!
     var publications: [Publication] = [] {
         didSet {
@@ -42,7 +45,7 @@ class PublicationCollectionViewController: UIViewController, UICollectionViewDat
     }
     
     func testNetworking() {
-        var xd = ClanBattlesService.gamesUrl + "/" + String(1) + "/publications"
+        var xd = ClanBattlesService.gamesUrl + "/" + userDefaults.string(forKey: "id")! + "/publications"
         Alamofire.request(xd)
             .responseJSON(completionHandler: {
                 response in
@@ -85,7 +88,7 @@ class PublicationCollectionViewController: UIViewController, UICollectionViewDat
    
     
     func updatePublications() {
-        var xd = ClanBattlesService.gamesUrl + "/" + String(1) + "/publications"
+        var xd = ClanBattlesService.gamesUrl + "/" + userDefaults.string(forKey: "id")! + "/publications"
         Alamofire.request(xd)
             .responseJSON(completionHandler: {
                 response in

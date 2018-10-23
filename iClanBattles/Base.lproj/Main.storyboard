@@ -10,11 +10,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="ryc-gz-oni">
             <objects>
-                <tabBarController id="aUW-SO-2wc" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="P1Q-Ui-Krm"/>
+                <tabBarController id="aUW-SO-2wc" customClass="TabBarViewController" customModule="iClanBattles" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="P1Q-Ui-Krm">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="VZe-lZ-2YX">
+                            <connections>
+                                <action selector="DoneButton:" destination="aUW-SO-2wc" id="vp5-sM-wtz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4RG-R3-i3C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -29,7 +35,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Rv-xU-oUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-900" y="939.58020989505258"/>
+            <point key="canvasLocation" x="-700" y="1003"/>
         </scene>
         <!--Map-->
         <scene sceneID="uEO-SU-i7j">
@@ -153,7 +159,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="aUW-SO-2wc" kind="relationship" relationship="rootViewController" id="hK2-NC-ZGS"/>
+                        <segue destination="aUW-SO-2wc" kind="relationship" relationship="rootViewController" id="N2b-K4-RCp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2P-l5-BEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,7 +230,7 @@
                                             <outlet property="descriptionLabel" destination="CPk-Iq-aLr" id="ywJ-NB-GS2"/>
                                             <outlet property="logoImageview" destination="Rjg-wx-3Di" id="CN7-8R-8hz"/>
                                             <outlet property="nameLabel" destination="ybi-Rm-UVA" id="6Rf-eJ-4aW"/>
-                                            <segue destination="3OD-pN-R53" kind="show" id="Orh-hm-rYW"/>
+                                            <segue destination="3OD-pN-R53" kind="show" identifier="showComunity" id="Orh-hm-rYW"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -351,13 +357,16 @@
                         <viewLayoutGuide key="safeArea" id="4hh-Rc-6OA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home_icon.png" id="1lY-pD-nBG"/>
+                    <navigationItem key="navigationItem" id="MuB-Ug-Ime">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="rAX-We-SyA"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="publicationColletionView" destination="uUp-L2-Bfo" id="K0t-hT-yJo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45B-2l-na2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477.60000000000002" y="-125.4872563718141"/>
+            <point key="canvasLocation" x="626" y="-27"/>
         </scene>
     </scenes>
     <resources>
