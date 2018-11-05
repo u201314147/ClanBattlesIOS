@@ -23,6 +23,14 @@
 		5E54C50D216B454100853020 /* chat_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F5534B21690562008821FD /* chat_logo.png */; };
 		5E54C52C216C454E00853020 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E54C52B216C454C00853020 /* placeholder.png */; };
 		5E54C52E216C48B700853020 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54C52D216C48B700853020 /* GameCell.swift */; };
+		E36828DB217FAF5D009FD87A /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36828DA217FAF5D009FD87A /* Clan.swift */; };
+		E36828F2217FB0E3009FD87A /* ClanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36828F1217FB0E3009FD87A /* ClanViewController.swift */; };
+		E36828F4217FB5E4009FD87A /* ClanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36828F3217FB5E4009FD87A /* ClanCell.swift */; };
+		E36828F9217FC90F009FD87A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36828F8217FC90F009FD87A /* TabBarViewController.swift */; };
+		E36828FC217FD151009FD87A /* ClanBattlesData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E36828FA217FD151009FD87A /* ClanBattlesData.xcdatamodeld */; };
+		E36828FE217FD1FF009FD87A /* ClanBattlesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36828FD217FD1FF009FD87A /* ClanBattlesStore.swift */; };
+		E3711EA6217FEC11004A35E8 /* AddPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3711EA5217FEC11004A35E8 /* AddPublicationViewController.swift */; };
+		E37395EE217E2A3F00DE3058 /* Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37395ED217E2A3F00DE3058 /* Publication.swift */; };
 		E393C779213B5F3C00638FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E393C778213B5F3C00638FC5 /* AppDelegate.swift */; };
 		E393C77B213B5F3C00638FC5 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E393C77A213B5F3C00638FC5 /* GamesViewController.swift */; };
 		E393C77E213B5F3C00638FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E393C77C213B5F3C00638FC5 /* Main.storyboard */; };
@@ -30,6 +38,8 @@
 		E393C783213B5F3C00638FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E393C781213B5F3C00638FC5 /* LaunchScreen.storyboard */; };
 		E393C78E213B5F3E00638FC5 /* iClanBattlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E393C78D213B5F3E00638FC5 /* iClanBattlesTests.swift */; };
 		E393C799213B5F3F00638FC5 /* iClanBattlesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E393C798213B5F3F00638FC5 /* iClanBattlesUITests.swift */; };
+		E3D29110217F82A500E4DBA9 /* PublicationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2910F217F82A500E4DBA9 /* PublicationCollectionViewController.swift */; };
+		E3D29129217F8D9A00E4DBA9 /* PublicatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29128217F8D9A00E4DBA9 /* PublicatCell.swift */; };
 		E3F553462168FFB5008821FD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3F553452168FFB5008821FD /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -242,6 +252,14 @@
 		5E54C4E0216AFD8A00853020 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		5E54C52B216C454C00853020 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		5E54C52D216C48B700853020 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		E36828DA217FAF5D009FD87A /* Clan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clan.swift; sourceTree = "<group>"; };
+		E36828F1217FB0E3009FD87A /* ClanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewController.swift; sourceTree = "<group>"; };
+		E36828F3217FB5E4009FD87A /* ClanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanCell.swift; sourceTree = "<group>"; };
+		E36828F8217FC90F009FD87A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E36828FB217FD151009FD87A /* ClanBattlesData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClanBattlesData.xcdatamodel; sourceTree = "<group>"; };
+		E36828FD217FD1FF009FD87A /* ClanBattlesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanBattlesStore.swift; sourceTree = "<group>"; };
+		E3711EA5217FEC11004A35E8 /* AddPublicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPublicationViewController.swift; sourceTree = "<group>"; };
+		E37395ED217E2A3F00DE3058 /* Publication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publication.swift; sourceTree = "<group>"; };
 		E393C775213B5F3B00638FC5 /* iClanBattles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iClanBattles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E393C778213B5F3C00638FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E393C77A213B5F3C00638FC5 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
@@ -255,6 +273,8 @@
 		E393C794213B5F3F00638FC5 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E393C798213B5F3F00638FC5 /* iClanBattlesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iClanBattlesUITests.swift; sourceTree = "<group>"; };
 		E393C79A213B5F3F00638FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D2910F217F82A500E4DBA9 /* PublicationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationCollectionViewController.swift; sourceTree = "<group>"; };
+		E3D29128217F8D9A00E4DBA9 /* PublicatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicatCell.swift; sourceTree = "<group>"; };
 		E3F553442168FA69008821FD /* backgr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgr.png; sourceTree = "<group>"; };
 		E3F553452168FFB5008821FD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		E3F5534721690110008821FD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -296,6 +316,9 @@
 			isa = PBXGroup;
 			children = (
 				5E54C4A5216AFB2100853020 /* Game.swift */,
+				E37395ED217E2A3F00DE3058 /* Publication.swift */,
+				E36828DA217FAF5D009FD87A /* Clan.swift */,
+				E36828FD217FD1FF009FD87A /* ClanBattlesStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +328,12 @@
 			children = (
 				E393C77A213B5F3C00638FC5 /* GamesViewController.swift */,
 				5E54C52D216C48B700853020 /* GameCell.swift */,
+				E3D2910F217F82A500E4DBA9 /* PublicationCollectionViewController.swift */,
+				E3D29128217F8D9A00E4DBA9 /* PublicatCell.swift */,
+				E36828F1217FB0E3009FD87A /* ClanViewController.swift */,
+				E36828F3217FB5E4009FD87A /* ClanCell.swift */,
+				E36828F8217FC90F009FD87A /* TabBarViewController.swift */,
+				E3711EA5217FEC11004A35E8 /* AddPublicationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -411,6 +440,7 @@
 				E3F553452168FFB5008821FD /* Login.storyboard */,
 				E393C781213B5F3C00638FC5 /* LaunchScreen.storyboard */,
 				E393C784213B5F3C00638FC5 /* Info.plist */,
+				E36828FA217FD151009FD87A /* ClanBattlesData.xcdatamodeld */,
 			);
 			path = iClanBattles;
 			sourceTree = "<group>";
@@ -757,11 +787,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D29129217F8D9A00E4DBA9 /* PublicatCell.swift in Sources */,
+				E37395EE217E2A3F00DE3058 /* Publication.swift in Sources */,
+				E36828F2217FB0E3009FD87A /* ClanViewController.swift in Sources */,
 				5E54C52E216C48B700853020 /* GameCell.swift in Sources */,
+				E36828F9217FC90F009FD87A /* TabBarViewController.swift in Sources */,
+				E3D29110217F82A500E4DBA9 /* PublicationCollectionViewController.swift in Sources */,
 				E393C77B213B5F3C00638FC5 /* GamesViewController.swift in Sources */,
 				5E54C4A6216AFB2100853020 /* Game.swift in Sources */,
 				E393C779213B5F3C00638FC5 /* AppDelegate.swift in Sources */,
+				E36828FC217FD151009FD87A /* ClanBattlesData.xcdatamodeld in Sources */,
+				E36828F4217FB5E4009FD87A /* ClanCell.swift in Sources */,
 				5E54C4A2216AC81000853020 /* ClanBattlesService.swift in Sources */,
+				E3711EA6217FEC11004A35E8 /* AddPublicationViewController.swift in Sources */,
+				E36828DB217FAF5D009FD87A /* Clan.swift in Sources */,
+				E36828FE217FD1FF009FD87A /* ClanBattlesStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -945,6 +985,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/iClanBattles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.iClanBattles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -960,6 +1001,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/iClanBattles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.iClanBattles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1070,6 +1112,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E36828FA217FD151009FD87A /* ClanBattlesData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E36828FB217FD151009FD87A /* ClanBattlesData.xcdatamodel */,
+			);
+			currentVersion = E36828FB217FD151009FD87A /* ClanBattlesData.xcdatamodel */;
+			path = ClanBattlesData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E393C76D213B5F3A00638FC5 /* Project object */;
 }

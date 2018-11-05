@@ -79,7 +79,19 @@ class GamesViewController: UIViewController, UICollectionViewDataSource, UIColle
         cell.updateValues(fromGame: game)
         return cell
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /*if segue.identifier == "showComunity" {
+            let tabUIcontroller = (segue.destination as! UITabBarController).viewControllers?.first as! TabBarViewController
+            tabUIcontroller.idcomunity = games[currentIndex].id
+            
+        }*/
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(String(games[currentIndex].id), forKey: "id")
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        currentIndex = indexPath.row
+        performSegue(withIdentifier: "showComunity", sender: self)
+    }
     func updateGames() {
         Alamofire.request(ClanBattlesService.gamesUrl)
             .responseJSON(completionHandler: {
