@@ -8,6 +8,8 @@
 
 import UIKit
 import AlamofireImage
+import Firebase
+import GoogleSignIn
 
 class GameCell : UICollectionViewCell {
     @IBOutlet weak var logoImageview: UIImageView!
