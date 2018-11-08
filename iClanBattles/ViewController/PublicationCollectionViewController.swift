@@ -96,7 +96,8 @@ class PublicationCollectionViewController: UIViewController, UICollectionViewDat
                 case .success(let value):
                     let json = JSON(value)
                     print("\(json)")
-                    let jsonPublications = json["publications"].arrayValue
+                    var jsonPublications = json["publications"].arrayValue
+                    jsonPublications = jsonPublications.reversed()
                     self.publications = Publication.from(jsonPublications: jsonPublications)
                 case .failure(let error):
                     print(error)

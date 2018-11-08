@@ -21,7 +21,7 @@ class LoginViewController : UIViewController, GIDSignInUIDelegate {
         let username = usernameTextField.text as String?
         let password = passwordTextField.text as String?
         if(username == "cliente" && password == "cliente") {
-            SVProgressHUD.show(withStatus: "Eduardo is processing...")
+            SVProgressHUD.show(withStatus: "Login is processing...")
             DispatchQueue.main.asyncAfter(deadline: .now() + 4) { // change 4 to desired number of seconds
                 // Your code with delay
                 SVProgressHUD.dismiss()
@@ -35,7 +35,8 @@ class LoginViewController : UIViewController, GIDSignInUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        self.hideKeyboardWhenTappedAround()
         GIDSignIn.sharedInstance().uiDelegate = self
         
         // Uncomment to automatically sign in the user.
@@ -46,4 +47,16 @@ class LoginViewController : UIViewController, GIDSignInUIDelegate {
     }
     
     
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
