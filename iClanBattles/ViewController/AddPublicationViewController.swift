@@ -9,6 +9,9 @@
 import Alamofire
 import UIKit
 import SwiftyJSON
+import Firebase
+import FirebaseStorage
+
 class AddPublicationViewController: UIViewController {
     
     @IBOutlet weak var TitleTextView: UITextField!
@@ -16,14 +19,69 @@ class AddPublicationViewController: UIViewController {
     @IBOutlet weak var photoImageView: UIImageView!
     
     var imagePicker: UIImagePickerController!
-    
+    var downloadString: String = ""
+    var imagenSubir: UIImage?
     @IBOutlet weak var PublishAction: UIButton!
     @IBAction func PublishButton(_ sender: UIButton) {
-         requestToSendObject()
+        uploadImagePic(img1: imagenSubir!)
+       //     requestToSendObject(from: downloadString)
         self.dismiss(animated: true)
     }
     
-    func requestToSendObject() {
+    func uploadImagePic(img1 :UIImage){
+        var data = NSData()
+        data = UIImageJPEGRepresentation(img1, 0.8)! as NSData
+        // set upload path
+        let uuid = NSUUID().uuidString.lowercased()
+       let filePath = "image/\(uuid)" // path where you wanted to store img in storage
+        let metaData = StorageMetadata()
+        
+        
+        metaData.contentType = "image/jpg"
+        
+        
+        
+        var storageRef = Storage.storage().reference()
+        storageRef.child(filePath).putData(data as Data, metadata: metaData){(metaData,error) in
+            if let error = error {
+                print(error.localizedDescription)
+                print("gg kevin no subio backend")
+                return
+            }else{
+                print("gg kevin si subio backend")
+                //store downloadURL
+                
+                storageRef.downloadURL { url, error in
+                    if let error = error {
+                        // Handle any errors
+                    } else {
+                        self.downloadString = url?.absoluteString ?? "gg"
+                        //self.requestToSendObject(from: downloadString)
+                        print("se subio")
+                    }
+                }
+                
+                
+                /*let downloadURL = metaData!.storageReference?.downloadURL(completion: { (url, error) in
+                    if (error == nil) {
+                        if let downloadUrl = url {
+                            // Make you download string
+                            self.downloadString = downloadUrl.absoluteString
+                            //self.requestToSendObject(from: downloadString)
+                             print("se subio")
+                        }
+                     } else {
+                        print("gg imagen")
+                    }
+                })
+           */
+                print("wenas")
+                
+            }
+        }
+        
+    }
+    func requestToSendObject(from url: String) {
         
         var textTitle: String = TitleTextView.text ?? "nani"
         var textDesc: String = DescriptionTextView.text ?? "nani"
@@ -32,7 +90,7 @@ class AddPublicationViewController: UIViewController {
         
         var url = "http://clanbattles.somee.com/clanbattles/v1/gamers/1/publications"
         let _headers : HTTPHeaders = ["Content-Type":"application/x-www-form-urlencoded"]
-        let params : Parameters = ["gamerId":"2","gameId": userDefaults.string(forKey: "id")! ,"title": textTitle, "description": textDesc, "urlToImage": "https://fotos.subefotos.com/ade226bce9d3f9cf09fff2c40b622ab6o.png","publicationDate":"2018-09-23T00:00:00","status":"ACT"]
+        let params : Parameters = ["gamerId":"2","gameId": userDefaults.string(forKey: "id")! ,"title": textTitle, "description": textDesc, "urlToImage": url	,"publicationDate":"2018-09-23T00:00:00","status":"ACT"]
         
         _ =  NSURL(string:"url" as String)
         
@@ -69,9 +127,9 @@ class AddPublicationViewController: UIViewController {
             .camera : .photoLibrary
         //Present Image Picker to User
         present(imagePicker, animated:true)
-        
+       
     }
-    
+   
 }
 extension AddPublicationViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
@@ -80,6 +138,9 @@ extension AddPublicationViewController: UINavigationControllerDelegate, UIImageP
         //Update Image View with selected or captured Image
         photoImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         
+        let image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        //uploadImagePic(img1: image!)
+        imagenSubir = image
         
     }
     
