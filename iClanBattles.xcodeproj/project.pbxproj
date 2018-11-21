@@ -19,6 +19,7 @@
 		5E54C52C216C454E00853020 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E54C52B216C454C00853020 /* placeholder.png */; };
 		5E54C52E216C48B700853020 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54C52D216C48B700853020 /* GameCell.swift */; };
 		7EC621FA5A0ED86BB23AB778 /* Pods_iClanBattles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D3917783000B5CFDC44F6E /* Pods_iClanBattles.framework */; };
+		7F533E7B21A4A0C2000C22C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F533E7A21A4A0C2000C22C6 /* GoogleService-Info.plist */; };
 		E36828DB217FAF5D009FD87A /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36828DA217FAF5D009FD87A /* Clan.swift */; };
 		E36828F2217FB0E3009FD87A /* ClanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36828F1217FB0E3009FD87A /* ClanViewController.swift */; };
 		E36828F4217FB5E4009FD87A /* ClanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36828F3217FB5E4009FD87A /* ClanCell.swift */; };
@@ -34,7 +35,6 @@
 		E393C783213B5F3C00638FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E393C781213B5F3C00638FC5 /* LaunchScreen.storyboard */; };
 		E393C78E213B5F3E00638FC5 /* iClanBattlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E393C78D213B5F3E00638FC5 /* iClanBattlesTests.swift */; };
 		E393C799213B5F3F00638FC5 /* iClanBattlesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E393C798213B5F3F00638FC5 /* iClanBattlesUITests.swift */; };
-		E3B73FBE219C7CE500ED30F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3B73FBD219C7CE400ED30F8 /* GoogleService-Info.plist */; };
 		E3D29110217F82A500E4DBA9 /* PublicationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2910F217F82A500E4DBA9 /* PublicationCollectionViewController.swift */; };
 		E3D29129217F8D9A00E4DBA9 /* PublicatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D29128217F8D9A00E4DBA9 /* PublicatCell.swift */; };
 		E3F553462168FFB5008821FD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3F553452168FFB5008821FD /* Login.storyboard */; };
@@ -65,6 +65,7 @@
 		5E54C52D216C48B700853020 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		698AA7858120A98F1A9B02B7 /* Pods-iClanBattles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iClanBattles.release.xcconfig"; path = "Pods/Target Support Files/Pods-iClanBattles/Pods-iClanBattles.release.xcconfig"; sourceTree = "<group>"; };
 		6B061996AFFB70C80862D950 /* Pods-iClanBattles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iClanBattles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iClanBattles/Pods-iClanBattles.debug.xcconfig"; sourceTree = "<group>"; };
+		7F533E7A21A4A0C2000C22C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92D3917783000B5CFDC44F6E /* Pods_iClanBattles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iClanBattles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36828DA217FAF5D009FD87A /* Clan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clan.swift; sourceTree = "<group>"; };
 		E36828F1217FB0E3009FD87A /* ClanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		E393C794213B5F3F00638FC5 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E393C798213B5F3F00638FC5 /* iClanBattlesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iClanBattlesUITests.swift; sourceTree = "<group>"; };
 		E393C79A213B5F3F00638FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3B73FBD219C7CE400ED30F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3D2910F217F82A500E4DBA9 /* PublicationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationCollectionViewController.swift; sourceTree = "<group>"; };
 		E3D29128217F8D9A00E4DBA9 /* PublicatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicatCell.swift; sourceTree = "<group>"; };
 		E3F553442168FA69008821FD /* backgr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgr.png; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 				E3F553452168FFB5008821FD /* Login.storyboard */,
 				E393C781213B5F3C00638FC5 /* LaunchScreen.storyboard */,
 				E393C784213B5F3C00638FC5 /* Info.plist */,
-				E3B73FBD219C7CE400ED30F8 /* GoogleService-Info.plist */,
+				7F533E7A21A4A0C2000C22C6 /* GoogleService-Info.plist */,
 				E36828FA217FD151009FD87A /* ClanBattlesData.xcdatamodeld */,
 			);
 			path = iClanBattles;
@@ -365,7 +365,7 @@
 				E393C783213B5F3C00638FC5 /* LaunchScreen.storyboard in Resources */,
 				E393C780213B5F3C00638FC5 /* Assets.xcassets in Resources */,
 				5E54C50D216B454100853020 /* chat_logo.png in Resources */,
-				E3B73FBE219C7CE500ED30F8 /* GoogleService-Info.plist in Resources */,
+				7F533E7B21A4A0C2000C22C6 /* GoogleService-Info.plist in Resources */,
 				5E54C50C216B453F00853020 /* map_icon.png in Resources */,
 				5E54C508216B452C00853020 /* home_icon.png in Resources */,
 				5E54C50A216B453800853020 /* logo.png in Resources */,

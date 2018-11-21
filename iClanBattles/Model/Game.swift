@@ -14,7 +14,7 @@ class Game {
     var name: String
     var description: String
     var urlWebPage: String
-    var urlToImage: String
+    var imageUrl: String
     var rating: Double
     var status: String
     
@@ -23,7 +23,7 @@ class Game {
         name = ""
         description = ""
         urlWebPage = ""
-        urlToImage = ""
+        imageUrl = ""
         rating = 0.0
         status = ""
     }
@@ -33,7 +33,7 @@ class Game {
         name = jsonObject["name"].stringValue
         description = jsonObject["description"].stringValue
         urlWebPage = jsonObject["urlWebPage"].stringValue
-        urlToImage = jsonObject["urlToImage"].stringValue
+        imageUrl = jsonObject["imageUrl"].stringValue
         rating = jsonObject["rating"].doubleValue
         status = jsonObject["status"].stringValue
     }

@@ -16,6 +16,8 @@ private let reuseIdentifier = "Cell"
 class GamesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     var currentIndex: Int = 0
     @IBOutlet var gamesCollectionView: UICollectionView!
+    var gamesSelected:[String] = [String]()
+    
     
     var games: [Game] = [] {
         didSet {
@@ -85,13 +87,37 @@ class GamesViewController: UIViewController, UICollectionViewDataSource, UIColle
             tabUIcontroller.idcomunity = games[currentIndex].id
             
         }*/
-        let userDefaults = UserDefaults.standard
-        userDefaults.set(String(games[currentIndex].id), forKey: "id")
+        //let userDefaults = UserDefaults.standard
+        //userDefaults.set(String(games[currentIndex].id), forKey: "id")
     }
+    
+    @IBAction func showFeeds(_ sender: Any) {
+        performSegue(withIdentifier: "showFeed", sender: self)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         currentIndex = indexPath.row
-        performSegue(withIdentifier: "showComunity", sender: self)
+        gamesSelected.append(String(games[currentIndex].id))
+        
+        if let cell = collectionView.cellForItem(at: indexPath) {
+            cell.contentView.backgroundColor = UIColor.darkGray
+        }
+        print(gamesSelected)
+        
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(gamesSelected.joined(separator: ","), forKey: "idjuegos")
+        
     }
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        currentIndex = indexPath.row
+        gamesSelected = gamesSelected.filter {$0 != String(currentIndex)}
+        print(gamesSelected)
+        if let cell = collectionView.cellForItem(at: indexPath) {
+            cell.contentView.backgroundColor = UIColor.white
+            //self.gamesCollectionView.indexPathsForSelectedItems?.remove(at: indexPath.row)
+        }
+    }
+    
     func updateGames() {
         Alamofire.request(ClanBattlesService.gamesUrl)
             .responseJSON(completionHandler: {
@@ -108,5 +134,11 @@ class GamesViewController: UIViewController, UICollectionViewDataSource, UIColle
             })
         
     }
+    
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 }
 

@@ -88,7 +88,12 @@ class PublicationCollectionViewController: UIViewController, UICollectionViewDat
    
     
     func updatePublications() {
-        var xd = ClanBattlesService.gamesUrl + "/" + userDefaults.string(forKey: "id")! + "/publications"
+        //var gamesSelected:[String] = [String]()
+        var array = userDefaults.string(forKey: "idjuegos")
+       
+        var xd = ClanBattlesService.baseUrl + "/v1/publications?q=" + array!
+      //  let params : Parameters = gamesSelected
+        
         Alamofire.request(xd)
             .responseJSON(completionHandler: {
                 response in

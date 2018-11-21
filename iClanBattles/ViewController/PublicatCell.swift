@@ -12,7 +12,7 @@ import AlamofireImage
 class PublicatCell : UICollectionViewCell {
 
     @IBOutlet weak var DescriptionLabel: UILabel!
-    @IBOutlet weak var UserDescLabel: UILabel!
+    
     @IBOutlet weak var UsernameLabel: UILabel!
     @IBOutlet weak var PublicationImage: UIImageView!
     @IBOutlet weak var UserPicImage: UIImageView!
@@ -22,7 +22,7 @@ class PublicatCell : UICollectionViewCell {
             UserPicImage.af_setImage(withURL: url)
         }
         UsernameLabel.text = publication.title
-        UserDescLabel.text = publication.title
+        //UserDescLabel.text = publication.title
         DescriptionLabel.text = publication.description
     }
 }
