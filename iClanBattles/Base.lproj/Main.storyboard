@@ -247,8 +247,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uUp-L2-Bfo">
-                                <rect key="frame" x="0.0" y="119" width="375" height="548"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uUp-L2-Bfo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2LS-84-jJV">
                                     <size key="itemSize" width="375" height="320"/>
@@ -264,7 +264,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w3N-7h-ilD" userLabel="PublicationImage">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="dance" translatesAutoresizingMaskIntoConstraints="NO" id="w3N-7h-ilD" userLabel="PublicationImage">
                                                     <rect key="frame" x="0.0" y="50" width="375" height="229.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHe-lX-dhi" userLabel="DescriptionLabel">
@@ -275,25 +275,32 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJA-hy-CJ1">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUT-HK-4Lc" userLabel="UsernameLabel">
-                                                            <rect key="frame" x="66" y="14.5" width="42" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUT-HK-4Lc" userLabel="UsernameLabel">
+                                                            <rect key="frame" x="66" y="15" width="42" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="error.png" translatesAutoresizingMaskIntoConstraints="NO" id="TEX-bE-7V4" userLabel="UserPicImage">
-                                                            <rect key="frame" x="20" y="11" width="37" height="28"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="No-image" translatesAutoresizingMaskIntoConstraints="NO" id="TEX-bE-7V4" userLabel="UserPicImage">
+                                                            <rect key="frame" x="5" y="5" width="52" height="42"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstItem="yUT-HK-4Lc" firstAttribute="leading" secondItem="eJA-hy-CJ1" secondAttribute="leading" constant="66" id="4kB-u1-3Y4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="TEX-bE-7V4" secondAttribute="bottom" constant="3" id="9mZ-Wq-Z2f"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yUT-HK-4Lc" secondAttribute="trailing" constant="20" symbolic="YES" id="ACZ-EP-MeP"/>
+                                                        <constraint firstItem="TEX-bE-7V4" firstAttribute="top" secondItem="eJA-hy-CJ1" secondAttribute="top" constant="5" id="CzE-kM-0Ww"/>
                                                         <constraint firstItem="yUT-HK-4Lc" firstAttribute="centerY" secondItem="eJA-hy-CJ1" secondAttribute="centerY" id="HYX-da-Vgl"/>
+                                                        <constraint firstItem="yUT-HK-4Lc" firstAttribute="top" secondItem="eJA-hy-CJ1" secondAttribute="top" constant="15" id="NBL-f7-L0e"/>
+                                                        <constraint firstItem="yUT-HK-4Lc" firstAttribute="leading" secondItem="TEX-bE-7V4" secondAttribute="trailing" constant="9" id="SX6-og-jAG"/>
                                                         <constraint firstAttribute="height" constant="50" id="gBv-z0-MQ8"/>
-                                                        <constraint firstItem="TEX-bE-7V4" firstAttribute="centerY" secondItem="eJA-hy-CJ1" secondAttribute="centerY" id="mQb-Q8-LQD"/>
+                                                        <constraint firstItem="yUT-HK-4Lc" firstAttribute="leading" secondItem="TEX-bE-7V4" secondAttribute="trailing" constant="9" id="mmA-RZ-hGM"/>
+                                                        <constraint firstItem="TEX-bE-7V4" firstAttribute="leading" secondItem="eJA-hy-CJ1" secondAttribute="leading" constant="5" id="wAt-ub-YF8"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="w3N-7h-ilD" secondAttribute="trailing" id="1Jl-Ka-Dzw"/>
                                             <constraint firstItem="w3N-7h-ilD" firstAttribute="leading" secondItem="4A4-PB-ekI" secondAttribute="leading" id="2vT-JC-aXL"/>
@@ -317,13 +324,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLv-aV-V6D">
-                                <rect key="frame" x="337" y="89" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="pnh-B0-WzN" kind="show" id="tja-mY-UDt"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="uUp-L2-Bfo" firstAttribute="trailing" secondItem="4hh-Rc-6OA" secondAttribute="trailing" id="1e2-5A-5pb"/>
@@ -336,7 +336,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4hh-Rc-6OA"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MuB-Ug-Ime"/>
+                    <navigationItem key="navigationItem" title="Home" id="MuB-Ug-Ime">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="tOh-d6-HaQ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="LLv-aV-V6D">
+                                <rect key="frame" x="337" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="pnh-B0-WzN" kind="show" id="tja-mY-UDt"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="publicationColletionView" destination="uUp-L2-Bfo" id="K0t-hT-yJo"/>
                     </connections>
@@ -353,7 +363,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHS-gw-mqJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHS-gw-mqJ">
                                 <rect key="frame" x="0.0" y="257" width="375" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -516,8 +526,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="No-image" width="225" height="225"/>
         <image name="chat_logo.png" width="32" height="32"/>
-        <image name="error.png" width="28" height="28"/>
+        <image name="dance" width="300" height="168"/>
         <image name="home_icon.png" width="32" height="32"/>
         <image name="map_icon.png" width="32" height="32"/>
         <image name="placeholder.png" width="825" height="1100"/>

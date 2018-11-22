@@ -16,6 +16,12 @@ class LoginViewController : UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var boxView: UIView!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+   
     
     @IBAction func logInTouchDown(_ sender: UIButton) {
         let username = usernameTextField.text as String?
@@ -38,6 +44,7 @@ class LoginViewController : UIViewController, GIDSignInUIDelegate {
 
         self.hideKeyboardWhenTappedAround()
         GIDSignIn.sharedInstance().uiDelegate = self
+        self.boxView.layer.cornerRadius = 5
         
         // Uncomment to automatically sign in the user.
         //GIDSignIn.sharedInstance().signInSilently()

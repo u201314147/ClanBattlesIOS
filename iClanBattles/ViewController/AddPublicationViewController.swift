@@ -18,6 +18,10 @@ class AddPublicationViewController: UIViewController {
     @IBOutlet weak var DescriptionTextView: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     var imagePicker: UIImagePickerController!
     var downloadString: String = ""
     var imagenSubir: UIImage?

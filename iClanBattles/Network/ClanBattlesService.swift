@@ -10,7 +10,9 @@ import Foundation
 
 class ClanBattlesService {
     static let baseUrl = "http://clanbattlesv2.somee.com/clanbattles"
+    static let baseUrl1 = "http://clanbattles.somee.com/clanbattles"
     static let gamesUrl = baseUrl + "/v1/games"
+    static let gamesUrl2 = baseUrl1 + "/v1/games"
     static let getLanCentersUrl = baseUrl + "/v1/lancenters"
     static let getGamersUrl = baseUrl + "/v1/gamers"
     func getPublicationByGamer(gamerId:Int) -> String{

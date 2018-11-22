@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,35 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgr.png" translatesAutoresizingMaskIntoConstraints="NO" id="HMI-n5-Q5o">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="fHL-x6-OeG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clan Battles LaunchScreen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVB-nJ-nMG">
-                                <rect key="frame" x="42" y="391.5" width="291" height="145.5"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="40"/>
-                                <color key="textColor" red="1" green="0.7993489355693959" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sdo-At-PWc">
-                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logito" translatesAutoresizingMaskIntoConstraints="NO" id="5ej-U5-E6E">
+                                <rect key="frame" x="0.0" y="95" width="375" height="109"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sVB-nJ-nMG" secondAttribute="bottom" constant="130" id="2xH-sK-Qs0"/>
-                            <constraint firstAttribute="bottom" secondItem="HMI-n5-Q5o" secondAttribute="bottom" id="4mL-IJ-rrj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sVB-nJ-nMG" secondAttribute="trailing" constant="42" id="CJu-ag-gda"/>
-                            <constraint firstItem="HMI-n5-Q5o" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EeW-My-oeg"/>
-                            <constraint firstItem="HMI-n5-Q5o" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hk9-O3-k9E"/>
-                            <constraint firstItem="HMI-n5-Q5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IfS-rj-w63"/>
-                            <constraint firstItem="Sdo-At-PWc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Q8E-7i-REd"/>
-                            <constraint firstItem="sVB-nJ-nMG" firstAttribute="top" secondItem="Sdo-At-PWc" secondAttribute="bottom" constant="8" id="RKT-HR-oSI"/>
-                            <constraint firstItem="HMI-n5-Q5o" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="WgM-Rv-uHC"/>
-                            <constraint firstItem="HMI-n5-Q5o" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="g4m-hs-t2Q"/>
-                            <constraint firstItem="Sdo-At-PWc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kwD-gy-aAj"/>
-                            <constraint firstItem="sVB-nJ-nMG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="lmS-WK-FGc"/>
-                            <constraint firstItem="HMI-n5-Q5o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="z8L-vG-7o7"/>
+                            <constraint firstItem="5ej-U5-E6E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4qc-c8-a5c"/>
+                            <constraint firstItem="5ej-U5-E6E" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-184" id="Drh-Bk-cWh"/>
+                            <constraint firstItem="fHL-x6-OeG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GBr-v9-qQp"/>
+                            <constraint firstItem="fHL-x6-OeG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lc9-eh-zxP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ej-U5-E6E" secondAttribute="trailing" id="PI7-cP-FuA"/>
+                            <constraint firstItem="fHL-x6-OeG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S4w-T0-HZw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fHL-x6-OeG" secondAttribute="trailing" id="UPL-xZ-b6M"/>
+                            <constraint firstItem="5ej-U5-E6E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="Vcy-pF-gIZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fHL-x6-OeG" secondAttribute="bottom" id="agX-D9-9vL"/>
+                            <constraint firstItem="fHL-x6-OeG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fSW-kn-Ktf"/>
+                            <constraint firstItem="fHL-x6-OeG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fSo-Fs-rVa"/>
+                            <constraint firstItem="fHL-x6-OeG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pHQ-dM-VSe"/>
+                            <constraint firstItem="5ej-U5-E6E" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yrc-b9-ecg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -57,7 +50,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backgr.png" width="720" height="1280"/>
-        <image name="logo.png" width="100" height="100"/>
+        <image name="launch" width="1920" height="1080"/>
+        <image name="logito" width="800" height="300"/>
     </resources>
 </document>

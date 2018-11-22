@@ -17,6 +17,10 @@ class TabBarViewController: UITabBarController {
         // Do any additional setup after loading the view.
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 
     @IBAction func DoneButton(_ sender: UIBarButtonItem) {
          self.dismiss(animated: true)

@@ -17,6 +17,10 @@ class ClanViewController: UIViewController, UICollectionViewDataSource, UICollec
     var idcomunity: Int?
     let userDefaults = UserDefaults.standard
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     @IBOutlet weak var RankCollectionView: UICollectionView!
 
     var clans: [Clan] = [] {
@@ -86,7 +90,7 @@ class ClanViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     
     func updateClans() {
-        var xd = ClanBattlesService.gamesUrl + "/" + userDefaults.string(forKey: "id")! + "/clans"
+        var xd = ClanBattlesService.gamesUrl2 + "/1/clans"
         Alamofire.request(xd)
             .responseJSON(completionHandler: {
                 response in
